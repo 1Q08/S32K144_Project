@@ -7,7 +7,7 @@
 **     Version     : Component 1.2.0, Driver 1.4, CPU db: 3.00.000
 **     Repository  : SDK_S32K1xx_15
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2025-02-02, 20:26, # CodeGen: 4
+**     Date/Time   : 2025-02-11, 17:29, # CodeGen: 8
 **     Abstract    :
 **
 **     Settings    :
@@ -252,8 +252,8 @@
 **                  Direction                              : <Automatic>
 **                  Pin 1                                  : <Automatic>
 **                  Direction                              : <Automatic>
-**                  Pin 2                                  : <Automatic>
-**                  Direction                              : <Automatic>
+**                  Pin 2                                  : PTB2
+**                  Direction                              : Input
 **                  Pin 3                                  : <Automatic>
 **                  Direction                              : <Automatic>
 **                  Pin 4                                  : <Automatic>
@@ -310,10 +310,10 @@
 **                  Direction                              : <Automatic>
 **                  Pin 11                                 : <Automatic>
 **                  Direction                              : <Automatic>
-**                  Pin 12                                 : <Automatic>
-**                  Direction                              : <Automatic>
-**                  Pin 13                                 : <Automatic>
-**                  Direction                              : <Automatic>
+**                  Pin 12                                 : PTC12
+**                  Direction                              : Input
+**                  Pin 13                                 : PTC13
+**                  Direction                              : Input
 **                  Pin 14                                 : <Automatic>
 **                  Direction                              : <Automatic>
 **                  Pin 15                                 : <Automatic>
@@ -324,10 +324,10 @@
 **                  Direction                              : <Automatic>
 **                Custom name                              : PTD
 **                PTD                                      : 
-**                  Pin 0                                  : <Automatic>
-**                  Direction                              : <Automatic>
-**                  Pin 1                                  : <Automatic>
-**                  Direction                              : <Automatic>
+**                  Pin 0                                  : PTD0
+**                  Direction                              : Output
+**                  Pin 1                                  : PTD1
+**                  Direction                              : Output
 **                  Pin 2                                  : <Automatic>
 **                  Direction                              : <Automatic>
 **                  Pin 3                                  : <Automatic>
@@ -619,10 +619,10 @@
 **                Interrupt Configuration Field            : <Automatic>
 **                Pin Mux Field                            : <Automatic>
 **                Lock Field                               : <Automatic>
-**                Drive Strength Field                     : <Automatic>
-**                Pull Enable Field                        : <Automatic>
-**                Pull Select Field                        : <Automatic>
-**                Initial Value Field                      : <Automatic>
+**                Drive Strength Field                     : High
+**                Pull Enable Field                        : Enabled
+**                Pull Select Field                        : Pull Up
+**                Initial Value Field                      : High
 **                Digital Filter Field                     : <Automatic>
 **              Pin 5: PTE11                               : 
 **                Custom name, Signal name                 : PTE11
@@ -748,25 +748,25 @@
 **                Digital Filter Field                     : <Automatic>
 **              Pin 21: PTD16                              : 
 **                Custom name, Signal name                 : PTD16
-**                Interrupt Status Field                   : <Automatic>
-**                Interrupt Configuration Field            : <Automatic>
-**                Pin Mux Field                            : <Automatic>
-**                Lock Field                               : <Automatic>
-**                Drive Strength Field                     : <Automatic>
+**                Interrupt Status Field                   : Don't modify
+**                Interrupt Configuration Field            : Interrupt Status Flag (ISF) is disabled.
+**                Pin Mux Field                            : Alternative 1 (GPIO).
+**                Lock Field                               : Unlocked
+**                Drive Strength Field                     : High
 **                Pull Enable Field                        : Enabled
-**                Pull Select Field                        : <Automatic>
-**                Initial Value Field                      : <Automatic>
-**                Digital Filter Field                     : <Automatic>
+**                Pull Select Field                        : Pull Up
+**                Initial Value Field                      : High
+**                Digital Filter Field                     : Disabled
 **              Pin 22: PTD15                              : 
 **                Custom name, Signal name                 : PTD15
-**                Interrupt Status Field                   : <Automatic>
+**                Interrupt Status Field                   : Don't modify
 **                Interrupt Configuration Field            : <Automatic>
 **                Pin Mux Field                            : <Automatic>
 **                Lock Field                               : <Automatic>
-**                Drive Strength Field                     : <Automatic>
+**                Drive Strength Field                     : High
 **                Pull Enable Field                        : Enabled
-**                Pull Select Field                        : <Automatic>
-**                Initial Value Field                      : <Automatic>
+**                Pull Select Field                        : Pull Up
+**                Initial Value Field                      : High
 **                Digital Filter Field                     : <Automatic>
 **              Pin 23: PTE9                               : 
 **                Custom name, Signal name                 : PTE9
@@ -1008,34 +1008,34 @@
 **                Digital Filter Field                     : <Automatic>
 **              Pin 48: PTB2                               : 
 **                Custom name, Signal name                 : PTB2
-**                Interrupt Status Field                   : <Automatic>
-**                Interrupt Configuration Field            : <Automatic>
-**                Pin Mux Field                            : <Automatic>
-**                Lock Field                               : <Automatic>
-**                Pull Enable Field                        : <Automatic>
-**                Pull Select Field                        : <Automatic>
-**                Initial Value Field                      : <Automatic>
-**                Digital Filter Field                     : <Automatic>
+**                Interrupt Status Field                   : Don't modify
+**                Interrupt Configuration Field            : Interrupt Status Flag (ISF) is disabled.
+**                Pin Mux Field                            : Alternative 1 (GPIO).
+**                Lock Field                               : Unlocked
+**                Pull Enable Field                        : Enabled
+**                Pull Select Field                        : Pull Up
+**                Initial Value Field                      : Low
+**                Digital Filter Field                     : Disabled
 **              Pin 49: PTC13                              : 
 **                Custom name, Signal name                 : PTC13
-**                Interrupt Status Field                   : <Automatic>
-**                Interrupt Configuration Field            : <Automatic>
-**                Pin Mux Field                            : <Automatic>
-**                Lock Field                               : <Automatic>
-**                Pull Enable Field                        : <Automatic>
-**                Pull Select Field                        : <Automatic>
-**                Initial Value Field                      : <Automatic>
-**                Digital Filter Field                     : <Automatic>
+**                Interrupt Status Field                   : Don't modify
+**                Interrupt Configuration Field            : Interrupt Status Flag (ISF) is disabled.
+**                Pin Mux Field                            : Alternative 1 (GPIO).
+**                Lock Field                               : Unlocked
+**                Pull Enable Field                        : Enabled
+**                Pull Select Field                        : Pull Up
+**                Initial Value Field                      : Low
+**                Digital Filter Field                     : Disabled
 **              Pin 50: PTC12                              : 
 **                Custom name, Signal name                 : PTC12
-**                Interrupt Status Field                   : <Automatic>
-**                Interrupt Configuration Field            : <Automatic>
-**                Pin Mux Field                            : <Automatic>
-**                Lock Field                               : <Automatic>
-**                Pull Enable Field                        : <Automatic>
-**                Pull Select Field                        : <Automatic>
-**                Initial Value Field                      : <Automatic>
-**                Digital Filter Field                     : <Automatic>
+**                Interrupt Status Field                   : Don't modify
+**                Interrupt Configuration Field            : Interrupt Status Flag (ISF) is disabled.
+**                Pin Mux Field                            : Alternative 1 (GPIO).
+**                Lock Field                               : Unlocked
+**                Pull Enable Field                        : Enabled
+**                Pull Select Field                        : Pull Up
+**                Initial Value Field                      : Low
+**                Digital Filter Field                     : Disabled
 **              Pin 51: PTC11                              : 
 **                Custom name, Signal name                 : PTC11
 **                Interrupt Status Field                   : <Automatic>
@@ -1583,7 +1583,7 @@
 
 
 /*! @brief User number of configured pins */
-#define NUM_OF_CONFIGURED_PINS 2
+#define NUM_OF_CONFIGURED_PINS 7
 
 /*! @brief User configuration structure */
 extern pin_settings_config_t g_pin_mux_InitConfigArr[NUM_OF_CONFIGURED_PINS];
