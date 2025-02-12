@@ -7,7 +7,7 @@
 **     Version     : Component 1.2.0, Driver 1.4, CPU db: 3.00.000
 **     Repository  : SDK_S32K1xx_15
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2025-02-11, 17:29, # CodeGen: 8
+**     Date/Time   : 2025-02-12, 17:56, # CodeGen: 17
 **     Abstract    :
 **
 **     Settings    :
@@ -604,26 +604,26 @@
 **                Digital Filter Field                     : <Automatic>
 **              Pin 3: PTD1                                : 
 **                Custom name, Signal name                 : PTD1
-**                Interrupt Status Field                   : <Automatic>
-**                Interrupt Configuration Field            : <Automatic>
-**                Pin Mux Field                            : <Automatic>
-**                Lock Field                               : <Automatic>
-**                Drive Strength Field                     : <Automatic>
-**                Pull Enable Field                        : <Automatic>
-**                Pull Select Field                        : <Automatic>
-**                Initial Value Field                      : <Automatic>
-**                Digital Filter Field                     : <Automatic>
-**              Pin 4: PTD0                                : 
-**                Custom name, Signal name                 : PTD0
-**                Interrupt Status Field                   : <Automatic>
-**                Interrupt Configuration Field            : <Automatic>
-**                Pin Mux Field                            : <Automatic>
-**                Lock Field                               : <Automatic>
+**                Interrupt Status Field                   : Don't modify
+**                Interrupt Configuration Field            : Interrupt Status Flag (ISF) is disabled.
+**                Pin Mux Field                            : Alternative 1 (GPIO).
+**                Lock Field                               : Unlocked
 **                Drive Strength Field                     : High
 **                Pull Enable Field                        : Enabled
 **                Pull Select Field                        : Pull Up
 **                Initial Value Field                      : High
-**                Digital Filter Field                     : <Automatic>
+**                Digital Filter Field                     : Disabled
+**              Pin 4: PTD0                                : 
+**                Custom name, Signal name                 : PTD0
+**                Interrupt Status Field                   : Don't modify
+**                Interrupt Configuration Field            : Interrupt Status Flag (ISF) is disabled.
+**                Pin Mux Field                            : Alternative 1 (GPIO).
+**                Lock Field                               : Unlocked
+**                Drive Strength Field                     : High
+**                Pull Enable Field                        : Enabled
+**                Pull Select Field                        : Pull Up
+**                Initial Value Field                      : High
+**                Digital Filter Field                     : Disabled
 **              Pin 5: PTE11                               : 
 **                Custom name, Signal name                 : PTE11
 **                Interrupt Status Field                   : <Automatic>

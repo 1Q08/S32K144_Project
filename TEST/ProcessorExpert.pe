@@ -3,7 +3,7 @@
   <Header>
     <Name>TEST</Name>
     <SavedBy>zy</SavedBy>
-    <ModificationStamp>6</ModificationStamp>
+    <ModificationStamp>10</ModificationStamp>
     <Date>2025-02-02</Date>
     <IDE>Eclipse IDE</IDE>
     <PEversion>1.12.2.RT7_b1743-0713</PEversion>
@@ -4436,64 +4436,64 @@
         <ItemSymbol>PTD1_ISF</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>&lt;Automatic&gt;</Value>
-        <PinFuncPropStateId>&lt;Automatic&gt;</PinFuncPropStateId>
+        <Value>Don't modify</Value>
+        <PinFuncPropStateId>state_0</PinFuncPropStateId>
       </ItemState>
       <ItemState>
         <ItemSymbol>PTD1_IRQC</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>&lt;Automatic&gt;</Value>
-        <PinFuncPropStateId>&lt;Automatic&gt;</PinFuncPropStateId>
+        <Value>Interrupt Status Flag (ISF) is disabled.</Value>
+        <PinFuncPropStateId>state_0000</PinFuncPropStateId>
       </ItemState>
       <ItemState>
         <ItemSymbol>PTD1_MUX</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>&lt;Automatic&gt;</Value>
-        <PinFuncPropStateId>&lt;Automatic&gt;</PinFuncPropStateId>
+        <Value>Alternative 1 (GPIO).</Value>
+        <PinFuncPropStateId>state_001</PinFuncPropStateId>
       </ItemState>
       <ItemState>
         <ItemSymbol>PTD1_LK</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>&lt;Automatic&gt;</Value>
-        <PinFuncPropStateId>&lt;Automatic&gt;</PinFuncPropStateId>
+        <Value>Unlocked</Value>
+        <PinFuncPropStateId>state_0</PinFuncPropStateId>
       </ItemState>
       <ItemState>
         <ItemSymbol>PTD1_DSE</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>&lt;Automatic&gt;</Value>
-        <PinFuncPropStateId>&lt;Automatic&gt;</PinFuncPropStateId>
+        <Value>High</Value>
+        <PinFuncPropStateId>state_1</PinFuncPropStateId>
       </ItemState>
       <ItemState>
         <ItemSymbol>PTD1_PE</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>&lt;Automatic&gt;</Value>
-        <PinFuncPropStateId>&lt;Automatic&gt;</PinFuncPropStateId>
+        <Value>Enabled</Value>
+        <PinFuncPropStateId>state_1</PinFuncPropStateId>
       </ItemState>
       <ItemState>
         <ItemSymbol>PTD1_PS</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>&lt;Automatic&gt;</Value>
-        <PinFuncPropStateId>&lt;Automatic&gt;</PinFuncPropStateId>
+        <Value>Pull Up</Value>
+        <PinFuncPropStateId>state_1</PinFuncPropStateId>
       </ItemState>
       <ItemState>
         <ItemSymbol>PTD1_InitValue</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>&lt;Automatic&gt;</Value>
-        <PinFuncPropStateId>&lt;Automatic&gt;</PinFuncPropStateId>
+        <Value>High</Value>
+        <PinFuncPropStateId>state_1</PinFuncPropStateId>
       </ItemState>
       <ItemState>
         <ItemSymbol>PTD1_DigitalFilter</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>&lt;Automatic&gt;</Value>
-        <PinFuncPropStateId>&lt;Automatic&gt;</PinFuncPropStateId>
+        <Value>Disabled</Value>
+        <PinFuncPropStateId>state_0</PinFuncPropStateId>
       </ItemState>
       <ItemState>
         <ItemSymbol>PTD0</ItemSymbol>
@@ -4511,29 +4511,29 @@
         <ItemSymbol>PTD0_ISF</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>&lt;Automatic&gt;</Value>
-        <PinFuncPropStateId>&lt;Automatic&gt;</PinFuncPropStateId>
+        <Value>Don't modify</Value>
+        <PinFuncPropStateId>state_0</PinFuncPropStateId>
       </ItemState>
       <ItemState>
         <ItemSymbol>PTD0_IRQC</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>&lt;Automatic&gt;</Value>
-        <PinFuncPropStateId>&lt;Automatic&gt;</PinFuncPropStateId>
+        <Value>Interrupt Status Flag (ISF) is disabled.</Value>
+        <PinFuncPropStateId>state_0000</PinFuncPropStateId>
       </ItemState>
       <ItemState>
         <ItemSymbol>PTD0_MUX</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>&lt;Automatic&gt;</Value>
-        <PinFuncPropStateId>&lt;Automatic&gt;</PinFuncPropStateId>
+        <Value>Alternative 1 (GPIO).</Value>
+        <PinFuncPropStateId>state_001</PinFuncPropStateId>
       </ItemState>
       <ItemState>
         <ItemSymbol>PTD0_LK</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>&lt;Automatic&gt;</Value>
-        <PinFuncPropStateId>&lt;Automatic&gt;</PinFuncPropStateId>
+        <Value>Unlocked</Value>
+        <PinFuncPropStateId>state_0</PinFuncPropStateId>
       </ItemState>
       <ItemState>
         <ItemSymbol>PTD0_DSE</ItemSymbol>
@@ -4567,8 +4567,8 @@
         <ItemSymbol>PTD0_DigitalFilter</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>&lt;Automatic&gt;</Value>
-        <PinFuncPropStateId>&lt;Automatic&gt;</PinFuncPropStateId>
+        <Value>Disabled</Value>
+        <PinFuncPropStateId>state_0</PinFuncPropStateId>
       </ItemState>
       <ItemState>
         <ItemSymbol>PTE11</ItemSymbol>

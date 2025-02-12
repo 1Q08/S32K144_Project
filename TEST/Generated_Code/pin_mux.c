@@ -7,7 +7,7 @@
 **     Version     : Component 1.2.0, Driver 1.4, CPU db: 3.00.000
 **     Repository  : SDK_S32K1xx_15
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2025-02-11, 17:29, # CodeGen: 8
+**     Date/Time   : 2025-02-12, 17:55, # CodeGen: 16
 **     Abstract    :
 **
 **
@@ -78,9 +78,9 @@ pin_settings_config_t g_pin_mux_InitConfigArr[NUM_OF_CONFIGURED_PINS] =
     {
         .base          = PORTD,
         .pinPortIdx    = 1u,
-        .pullConfig    = PORT_INTERNAL_PULL_NOT_ENABLED,
+        .pullConfig    = PORT_INTERNAL_PULL_UP_ENABLED,
         .passiveFilter = false,
-        .driveSelect   = PORT_LOW_DRIVE_STRENGTH,
+        .driveSelect   = PORT_HIGH_DRIVE_STRENGTH,
         .mux           = PORT_MUX_AS_GPIO,
         .pinLock       = false,
         .intConfig     = PORT_DMA_INT_DISABLED,
@@ -88,7 +88,7 @@ pin_settings_config_t g_pin_mux_InitConfigArr[NUM_OF_CONFIGURED_PINS] =
         .gpioBase      = PTD,
         .direction     = GPIO_OUTPUT_DIRECTION,
         .digitalFilter = false,
-        .initValue     = 0u,
+        .initValue     = 1u,
     },
     {
         .base          = PORTD,
