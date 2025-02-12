@@ -33,9 +33,9 @@
       <File Name="SDK/platform/devices/S32K144/include/S32K144.h" FileDate="2025-02-02, 19:28:17" FileAge="1738495697425" FileType="1048576" CompNumb="1" />
       <File Name="SDK/platform/drivers/inc/pins_driver.h" FileDate="2025-02-02, 19:28:17" FileAge="1738495697346" FileType="1048576" CompNumb="2" />
       <File Name="SDK/platform/drivers/src/clock/S32K1xx/sim_hw_access.h" FileDate="2025-02-02, 19:28:17" FileAge="1738495697377" FileType="1048576" CompNumb="3" />
-      <File Name="Generated_Code/pin_mux.h" FileDate="2025-02-12, 17:56:43" FileAge="1739354203547" FileType="45637" CompNumb="2" />
+      <File Name="Generated_Code/pin_mux.h" FileDate="2025-02-12, 18:50:43" FileAge="1739357443728" FileType="45637" CompNumb="2" />
       <File Name="SDK/platform/drivers/src/clock/S32K1xx/pmc_hw_access.h" FileDate="2025-02-02, 19:28:17" FileAge="1738495697372" FileType="1048576" CompNumb="3" />
-      <File Name="Generated_Code/pin_mux.c" FileDate="2025-02-12, 17:55:23" FileAge="1739354123518" FileType="45637" CompNumb="2" />
+      <File Name="Generated_Code/pin_mux.c" FileDate="2025-02-12, 18:50:43" FileAge="1739357443727" FileType="45637" CompNumb="2" />
       <File Name="SDK/platform/devices/common/s32_core_cm4.h" FileDate="2025-02-02, 19:28:17" FileAge="1738495697404" FileType="1048576" CompNumb="1" />
       <File Name="SDK/platform/devices/device_registers.h" FileDate="2025-02-02, 19:28:17" FileAge="1738495697396" FileType="1048576" CompNumb="1" />
       <File Name="SDK/platform/devices/S32K144/startup/system_S32K144.h" FileDate="2025-02-02, 19:28:17" FileAge="1738495697414" FileType="1048576" CompNumb="1" />
@@ -44,7 +44,7 @@
       <File Name="SDK/platform/devices/S32K144/startup/system_S32K144.c" FileDate="2025-02-02, 19:28:17" FileAge="1738495697416" FileType="1048576" CompNumb="1" />
       <File Name="SDK/platform/devices/callbacks.h" FileDate="2025-02-02, 19:28:17" FileAge="1738495697399" FileType="1048576" CompNumb="1" />
       <File Name="Documentation/TEST.txt" FileDate="2025-02-02, 19:28:17" FileAge="1738495697466" FileType="3072" />
-      <File Name="Sources/main.c" FileDate="2025-02-12, 17:50:37" FileAge="1739353837854" FileType="128" />
+      <File Name="Sources/main.c" FileDate="2025-02-12, 18:50:43" FileAge="1739357443733" FileType="128" />
       <File Name="SDK/platform/drivers/src/clock/S32K1xx/scg_hw_access.h" FileDate="2025-02-02, 19:28:17" FileAge="1738495697375" FileType="1048576" CompNumb="3" />
       <File Name="SDK/platform/drivers/src/pins/pins_port_hw_access.h" FileDate="2025-02-02, 19:28:17" FileAge="1738495697353" FileType="1048576" CompNumb="2" />
       <File Name="SDK/platform/drivers/src/pins/pins_port_hw_access.c" FileDate="2025-02-02, 19:28:17" FileAge="1738495697349" FileType="1048576" CompNumb="2" />
@@ -58,5 +58,5 @@
       <File Name="SDK/platform/devices/status.h" FileDate="2025-02-02, 19:28:17" FileAge="1738495697394" FileType="1048576" CompNumb="1" />
     </GeneratedByPE>
   </GeneratedFilesList>
-  <CodeGenReference>18</CodeGenReference>
+  <CodeGenReference>19</CodeGenReference>
 </CodeGenerationInfo>
