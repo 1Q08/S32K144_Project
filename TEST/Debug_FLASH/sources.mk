@@ -28,5 +28,6 @@ SDK/platform/devices \
 SDK/platform/drivers/src/clock/S32K1xx \
 SDK/platform/drivers/src/interrupt \
 SDK/platform/drivers/src/pins \
+SDK/rtos/osif \
 Sources \
 

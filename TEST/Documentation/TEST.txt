@@ -70,6 +70,19 @@ Module "intMan1"   (component interrupt_manager)
    - intMan1_INT_SYS_GetPending -Get Pending Interrupt.
    - intMan1_INT_SYS_GetActive -Get Active Interrupt.
 
+Module "osif1"     (component osif)
+   - osif1_OSIF_TimeDelay -Delays execution for a number of milliseconds.
+   - osif1_OSIF_MutexLock -Waits for a mutex and locks it.
+   - osif1_OSIF_MutexUnlock -Unlocks a previously locked mutex.
+   - osif1_OSIF_MutexCreate -Create an unlocked mutex.
+   - osif1_OSIF_MutexDestroy -Destroys a previously created mutex.
+   - osif1_OSIF_SemaWait -Decrement a semaphore with timeout.
+   - osif1_OSIF_SemaPost -Increment a semaphore.
+   - osif1_OSIF_SemaCreate -Creates a semaphore with a given value.
+   - osif1_OSIF_SemaDestroy -Destroys a previously created semaphore.
+   - osif1_OSIF_GetMilliseconds -Returns the number of miliseconds elapsed since starting the internal timer or starting the 
+                scheduler.
+
 Module "Cpu"       (component S32K144_100)
    - Cpu_SystemInit -This function disables the watchdog, enables FPU and the power mode protection. SystemInit is called from 
                 startup_device file.

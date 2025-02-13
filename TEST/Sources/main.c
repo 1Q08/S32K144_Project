@@ -25,12 +25,12 @@
 
 /* Including necessary module. Cpu.h contains other modules needed for compiling.*/
 #include "Cpu.h"
-
   volatile int exit_code = 0;
 
 /* User includes (#include below this line is not maintained by Processor Expert) */
+#include "osif.h"
 #include "led.h"
-#include "key.h"
+
 /*! 
   \brief The main function for the project.
   \details The startup initialization sequence is the following:
@@ -40,7 +40,6 @@
 int main(void)
 {
 	/* Write your local variable definition here */
-
 	/*** Processor Expert internal initialization. DON'T REMOVE THIS CODE!!! ***/
 	#ifdef PEX_RTOS_INIT
 		PEX_RTOS_INIT();                   /* Initialization of the selected RTOS. Macro is defined by the RTOS component. */
@@ -50,9 +49,14 @@ int main(void)
 	/* Write your code here */
 	CLOCK_SYS_Init(g_clockManConfigsArr, CLOCK_MANAGER_CONFIG_CNT,g_clockManCallbacksArr, CLOCK_MANAGER_CALLBACK_CNT);
 	CLOCK_SYS_UpdateConfiguration(0U, CLOCK_MANAGER_POLICY_AGREEMENT);
+//	delay_init();
 	PINS_DRV_Init(NUM_OF_CONFIGURED_PINS, g_pin_mux_InitConfigArr);  // ≥ı ºªØIO
 	while(1)
 	{
+		LED_R(0);
+		OSIF_TimeDelay(1000);
+		LED_R(1);
+		OSIF_TimeDelay(1000);
 	}
 
 	/*** Don't write any code pass this line, or it will be deleted during code generation. ***/

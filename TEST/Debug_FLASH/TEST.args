@@ -21,6 +21,8 @@
 "./SDK/platform/drivers/src/interrupt/interrupt_manager.o"
 "./SDK/platform/drivers/src/pins/pins_driver.o"
 "./SDK/platform/drivers/src/pins/pins_port_hw_access.o"
+"./SDK/rtos/osif/osif_baremetal.o"
+"./Sources/delay.o"
 "./Sources/key.o"
 "./Sources/led.o"
 "./Sources/main.o"

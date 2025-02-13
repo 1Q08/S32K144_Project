@@ -12,6 +12,7 @@
 -I"C:/Users/zy/Desktop/githubspace/S32K144_Project/TEST/SDK/platform/devices/S32K144/include"
 -I"C:/Users/zy/Desktop/githubspace/S32K144_Project/TEST/SDK/platform/devices/S32K144/startup"
 -I"C:/Users/zy/Desktop/githubspace/S32K144_Project/TEST/SDK/platform/drivers/inc"
+-I"C:/Users/zy/Desktop/githubspace/S32K144_Project/TEST/SDK/rtos/osif/"
 -O1
 -g
 -pedantic
