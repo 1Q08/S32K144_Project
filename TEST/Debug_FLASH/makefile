@@ -11,7 +11,9 @@ RM := rm -rf
 -include Sources/subdir.mk
 -include SDK/rtos/osif/subdir.mk
 -include SDK/platform/drivers/src/pins/subdir.mk
+-include SDK/platform/drivers/src/lpuart/subdir.mk
 -include SDK/platform/drivers/src/interrupt/subdir.mk
+-include SDK/platform/drivers/src/edma/subdir.mk
 -include SDK/platform/drivers/src/clock/S32K1xx/subdir.mk
 -include SDK/platform/devices/S32K144/startup/subdir.mk
 -include SDK/platform/devices/subdir.mk

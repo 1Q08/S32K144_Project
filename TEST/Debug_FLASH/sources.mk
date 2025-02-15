@@ -26,7 +26,9 @@ Project_Settings/Startup_Code \
 SDK/platform/devices/S32K144/startup \
 SDK/platform/devices \
 SDK/platform/drivers/src/clock/S32K1xx \
+SDK/platform/drivers/src/edma \
 SDK/platform/drivers/src/interrupt \
+SDK/platform/drivers/src/lpuart \
 SDK/platform/drivers/src/pins \
 SDK/rtos/osif \
 Sources \

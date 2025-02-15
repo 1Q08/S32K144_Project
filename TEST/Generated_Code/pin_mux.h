@@ -7,7 +7,7 @@
 **     Version     : Component 1.2.0, Driver 1.4, CPU db: 3.00.000
 **     Repository  : SDK_S32K1xx_15
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2025-02-12, 17:56, # CodeGen: 17
+**     Date/Time   : 2025-02-15, 16:30, # CodeGen: 40
 **     Abstract    :
 **
 **     Settings    :
@@ -481,8 +481,8 @@
 **                LPUART1                                  : 
 **                  Clear to Send                          : <Automatic>
 **                  Request to Send                        : <Automatic>
-**                  Receive Data                           : <Automatic>
-**                  Transmit Data                          : <Automatic>
+**                  Receive Data                           : PTC6
+**                  Transmit Data                          : PTC7
 **                  Direction                              : <Automatic>
 **                Custom name                              : LPUART2
 **                LPUART2                                  : 
@@ -845,7 +845,7 @@
 **                Interrupt Status Field                   : <Automatic>
 **                Interrupt Configuration Field            : <Automatic>
 **                Pin Mux Field                            : <Automatic>
-**                Lock Field                               : <Automatic>
+**                Lock Field                               : Locked
 **                Pull Enable Field                        : <Automatic>
 **                Pull Select Field                        : <Automatic>
 **                Initial Value Field                      : <Automatic>
@@ -1319,24 +1319,24 @@
 **                Digital Filter Field                     : <Automatic>
 **              Pin 80: PTC7                               : 
 **                Custom name, Signal name                 : PTC7
-**                Interrupt Status Field                   : <Automatic>
-**                Interrupt Configuration Field            : <Automatic>
-**                Pin Mux Field                            : <Automatic>
-**                Lock Field                               : <Automatic>
-**                Pull Enable Field                        : <Automatic>
-**                Pull Select Field                        : <Automatic>
-**                Initial Value Field                      : <Automatic>
-**                Digital Filter Field                     : <Automatic>
+**                Interrupt Status Field                   : Don't modify
+**                Interrupt Configuration Field            : Interrupt Status Flag (ISF) is disabled.
+**                Pin Mux Field                            : Alternative 2
+**                Lock Field                               : Unlocked
+**                Pull Enable Field                        : Enabled
+**                Pull Select Field                        : Pull Up
+**                Initial Value Field                      : High
+**                Digital Filter Field                     : Disabled
 **              Pin 81: PTC6                               : 
 **                Custom name, Signal name                 : PTC6
-**                Interrupt Status Field                   : <Automatic>
-**                Interrupt Configuration Field            : <Automatic>
-**                Pin Mux Field                            : <Automatic>
-**                Lock Field                               : <Automatic>
-**                Pull Enable Field                        : <Automatic>
-**                Pull Select Field                        : <Automatic>
-**                Initial Value Field                      : <Automatic>
-**                Digital Filter Field                     : <Automatic>
+**                Interrupt Status Field                   : Don't modify
+**                Interrupt Configuration Field            : Interrupt Status Flag (ISF) is disabled.
+**                Pin Mux Field                            : Alternative 2
+**                Lock Field                               : Unlocked
+**                Pull Enable Field                        : Enabled
+**                Pull Select Field                        : Pull Up
+**                Initial Value Field                      : High
+**                Digital Filter Field                     : Disabled
 **              Pin 82: PTA16                              : 
 **                Custom name, Signal name                 : PTA16
 **                Interrupt Status Field                   : <Automatic>
@@ -1583,7 +1583,7 @@
 
 
 /*! @brief User number of configured pins */
-#define NUM_OF_CONFIGURED_PINS 7
+#define NUM_OF_CONFIGURED_PINS 10
 
 /*! @brief User configuration structure */
 extern pin_settings_config_t g_pin_mux_InitConfigArr[NUM_OF_CONFIGURED_PINS];

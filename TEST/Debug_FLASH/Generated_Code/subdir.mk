@@ -6,16 +6,22 @@
 C_SRCS += \
 ../Generated_Code/Cpu.c \
 ../Generated_Code/clockMan1.c \
+../Generated_Code/dmaController1.c \
+../Generated_Code/lpuart1.c \
 ../Generated_Code/pin_mux.c 
 
 OBJS += \
 ./Generated_Code/Cpu.o \
 ./Generated_Code/clockMan1.o \
+./Generated_Code/dmaController1.o \
+./Generated_Code/lpuart1.o \
 ./Generated_Code/pin_mux.o 
 
 C_DEPS += \
 ./Generated_Code/Cpu.d \
 ./Generated_Code/clockMan1.d \
+./Generated_Code/dmaController1.d \
+./Generated_Code/lpuart1.d \
 ./Generated_Code/pin_mux.d 
 
 

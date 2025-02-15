@@ -7,7 +7,7 @@
 **     Version     : Component 1.2.0, Driver 1.4, CPU db: 3.00.000
 **     Repository  : SDK_S32K1xx_15
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2025-02-12, 17:55, # CodeGen: 16
+**     Date/Time   : 2025-02-15, 16:19, # CodeGen: 39
 **     Abstract    :
 **
 **
@@ -136,6 +136,19 @@ pin_settings_config_t g_pin_mux_InitConfigArr[NUM_OF_CONFIGURED_PINS] =
         .initValue     = 1u,
     },
     {
+        .base          = PORTC,
+        .pinPortIdx    = 2u,
+        .pullConfig    = PORT_INTERNAL_PULL_NOT_ENABLED,
+        .passiveFilter = false,
+        .driveSelect   = PORT_LOW_DRIVE_STRENGTH,
+        .mux           = PORT_PIN_DISABLED,
+        .pinLock       = true,
+        .intConfig     = PORT_DMA_INT_DISABLED,
+        .clearIntFlag  = false,
+        .gpioBase      = NULL,
+        .digitalFilter = false,
+    },
+    {
         .base          = PORTB,
         .pinPortIdx    = 2u,
         .pullConfig    = PORT_INTERNAL_PULL_UP_ENABLED,
@@ -175,6 +188,32 @@ pin_settings_config_t g_pin_mux_InitConfigArr[NUM_OF_CONFIGURED_PINS] =
         .clearIntFlag  = false,
         .gpioBase      = PTC,
         .direction     = GPIO_INPUT_DIRECTION,
+        .digitalFilter = false,
+    },
+    {
+        .base          = PORTC,
+        .pinPortIdx    = 7u,
+        .pullConfig    = PORT_INTERNAL_PULL_UP_ENABLED,
+        .passiveFilter = false,
+        .driveSelect   = PORT_LOW_DRIVE_STRENGTH,
+        .mux           = PORT_MUX_ALT2,
+        .pinLock       = false,
+        .intConfig     = PORT_DMA_INT_DISABLED,
+        .clearIntFlag  = false,
+        .gpioBase      = NULL,
+        .digitalFilter = false,
+    },
+    {
+        .base          = PORTC,
+        .pinPortIdx    = 6u,
+        .pullConfig    = PORT_INTERNAL_PULL_UP_ENABLED,
+        .passiveFilter = false,
+        .driveSelect   = PORT_LOW_DRIVE_STRENGTH,
+        .mux           = PORT_MUX_ALT2,
+        .pinLock       = false,
+        .intConfig     = PORT_DMA_INT_DISABLED,
+        .clearIntFlag  = false,
+        .gpioBase      = NULL,
         .digitalFilter = false,
     },
 };
