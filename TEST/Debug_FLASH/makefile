@@ -13,8 +13,10 @@ RM := rm -rf
 -include SDK/platform/drivers/src/pins/subdir.mk
 -include SDK/platform/drivers/src/lpuart/subdir.mk
 -include SDK/platform/drivers/src/interrupt/subdir.mk
+-include SDK/platform/drivers/src/ftm/subdir.mk
 -include SDK/platform/drivers/src/edma/subdir.mk
 -include SDK/platform/drivers/src/clock/S32K1xx/subdir.mk
+-include SDK/platform/drivers/src/adc/subdir.mk
 -include SDK/platform/devices/S32K144/startup/subdir.mk
 -include SDK/platform/devices/subdir.mk
 -include Project_Settings/Startup_Code/subdir.mk

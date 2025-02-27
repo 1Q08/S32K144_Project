@@ -7,7 +7,7 @@
 **     Version     : Component SDK_S32K1xx_15, Driver 01.00, CPU db: 3.00.000
 **     Repository  : SDK_S32K1xx_15
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2025-02-15, 16:36, # CodeGen: 41
+**     Date/Time   : 2025-02-16, 02:33, # CodeGen: 44
 **     Contents    :
 **         EDMA_DRV_Init                              - status_t EDMA_DRV_Init(edma_state_t *edmaState, const edma_user_config_t...
 **         EDMA_DRV_Deinit                            - status_t EDMA_DRV_Deinit(void);
@@ -105,7 +105,6 @@ extern edma_channel_config_t dmaController1Chn0_Config;
 extern const edma_channel_config_t * const edmaChnConfigArray[EDMA_CONFIGURED_CHANNELS_COUNT];
 
 /*! @brief Configuration declaration */
-extern const edma_user_config_t dmaController1_InitConfig0;
 
 
 #endif  /* ifndef dmaController1_H */

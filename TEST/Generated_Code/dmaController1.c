@@ -7,7 +7,7 @@
 **     Version     : Component SDK_S32K1xx_15, Driver 01.00, CPU db: 3.00.000
 **     Repository  : SDK_S32K1xx_15
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2025-02-15, 16:36, # CodeGen: 41
+**     Date/Time   : 2025-02-16, 02:33, # CodeGen: 44
 **
 **     Copyright 1997 - 2015 Freescale Semiconductor, Inc. 
 **     Copyright 2016-2017 NXP 
@@ -68,10 +68,6 @@ const edma_channel_config_t * const edmaChnConfigArray[] = {
     &dmaController1Chn0_Config
 };
 
-const edma_user_config_t dmaController1_InitConfig0 = {
-    .chnArbitration = EDMA_ARBITRATION_FIXED_PRIORITY,
-    .haltOnError = false
-};
 
 /* END dmaController1. */
 

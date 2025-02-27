@@ -5,13 +5,15 @@
 **         Main module.
 **         This module contains user's application code.
 **     Settings    :
+**         Build by S32 Design Studio for ARM (Version 2.2)
+**         S32K144_SDK V3.0.0
 **     Contents    :
 **         No public methods
 **
 ** ###################################################################*/
 /*!
 ** @file main.c
-** @version 01.02
+** @version 01.04
 ** @brief
 **         Main module.
 **         This module contains user's application code.
@@ -25,13 +27,12 @@
 
 /* Including necessary module. Cpu.h contains other modules needed for compiling.*/
 #include "Cpu.h"
-  volatile int exit_code = 0;
+volatile int exit_code = 0;
 
 /* User includes (#include below this line is not maintained by Processor Expert) */
 #include "osif.h"
 #include "led.h"
 #include "uart.h"
-
 /*! 
   \brief The main function for the project.
   \details The startup initialization sequence is the following:
@@ -55,14 +56,8 @@ int main(void)
 	LPUART_DRV_Init(INST_LPUART1, &lpuart1_State, &lpuart1_InitConfig0);  // ³õÊ¼»¯´®¿Ú
 	while(1)
 	{
-		LED_R(0);
-		u1_printf("ÁÁµÆ\r\n");
-		OSIF_TimeDelay(1000);
-		LED_R(1);
-		u1_printf("ÃðµÆ\r\n");
-		OSIF_TimeDelay(1000);
+		PINS_DRV_WritePins(PTD, 1<<0 | 0<<1 | 1<<15  | 0<<16 );
 	}
-
 	/*** Don't write any code pass this line, or it will be deleted during code generation. ***/
   /*** RTOS startup code. Macro PEX_RTOS_START is defined by the RTOS component. DON'T MODIFY THIS CODE!!! ***/
   #ifdef PEX_RTOS_START

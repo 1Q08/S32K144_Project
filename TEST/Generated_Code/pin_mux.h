@@ -7,7 +7,7 @@
 **     Version     : Component 1.2.0, Driver 1.4, CPU db: 3.00.000
 **     Repository  : SDK_S32K1xx_15
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2025-02-15, 16:30, # CodeGen: 40
+**     Date/Time   : 2025-02-19, 23:24, # CodeGen: 48
 **     Abstract    :
 **
 **     Settings    :
@@ -483,7 +483,7 @@
 **                  Request to Send                        : <Automatic>
 **                  Receive Data                           : PTC6
 **                  Transmit Data                          : PTC7
-**                  Direction                              : <Automatic>
+**                  Direction                              : Output
 **                Custom name                              : LPUART2
 **                LPUART2                                  : 
 **                  Clear to Send                          : <Automatic>
@@ -1100,24 +1100,24 @@
 **                Digital Filter Field                     : <Automatic>
 **              Pin 57: PTA7                               : 
 **                Custom name, Signal name                 : PTA7
-**                Interrupt Status Field                   : <Automatic>
-**                Interrupt Configuration Field            : <Automatic>
-**                Pin Mux Field                            : <Automatic>
-**                Lock Field                               : <Automatic>
-**                Pull Enable Field                        : <Automatic>
-**                Pull Select Field                        : <Automatic>
-**                Initial Value Field                      : <Automatic>
-**                Digital Filter Field                     : <Automatic>
+**                Interrupt Status Field                   : Don't modify
+**                Interrupt Configuration Field            : Interrupt Status Flag (ISF) is disabled.
+**                Pin Mux Field                            : Pin disabled (analog)
+**                Lock Field                               : Unlocked
+**                Pull Enable Field                        : Disabled
+**                Pull Select Field                        : Pull Down
+**                Initial Value Field                      : Low
+**                Digital Filter Field                     : Disabled
 **              Pin 58: PTA6                               : 
 **                Custom name, Signal name                 : PTA6
-**                Interrupt Status Field                   : <Automatic>
-**                Interrupt Configuration Field            : <Automatic>
-**                Pin Mux Field                            : <Automatic>
-**                Lock Field                               : <Automatic>
-**                Pull Enable Field                        : <Automatic>
-**                Pull Select Field                        : <Automatic>
-**                Initial Value Field                      : <Automatic>
-**                Digital Filter Field                     : <Automatic>
+**                Interrupt Status Field                   : Don't modify
+**                Interrupt Configuration Field            : Interrupt Status Flag (ISF) is disabled.
+**                Pin Mux Field                            : Pin disabled (analog)
+**                Lock Field                               : Unlocked
+**                Pull Enable Field                        : Disabled
+**                Pull Select Field                        : Pull Down
+**                Initial Value Field                      : Low
+**                Digital Filter Field                     : Disabled
 **              Pin 59: PTE7                               : 
 **                Custom name, Signal name                 : PTE7
 **                Interrupt Status Field                   : <Automatic>

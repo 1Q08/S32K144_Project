@@ -7,7 +7,7 @@
 **     Version     : Component 01.197, Driver 01.00, CPU db: 3.00.000
 **     Datasheet   : S32K14XRM Rev. 2, 02/2017
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2025-02-15, 16:36, # CodeGen: 41
+**     Date/Time   : 2025-02-28, 17:37, # CodeGen: 53
 **     Abstract    :
 **
 **     Settings    :
@@ -62,6 +62,8 @@
 #include "edma_driver.h"
 #include "osif.h"
 #include "lpuart_driver.h"
+#include "adc_driver.h"
+#include "ftm_mc_driver.h"
 #include "system_S32K144.h"
 
 /* Including needed modules to compile this module/procedure */
@@ -69,6 +71,8 @@
 #include "clockMan1.h"
 #include "lpuart1.h"
 #include "dmaController1.h"
+#include "adConv1.h"
+#include "flexTimer_mc1.h"
 
 #ifdef __cplusplus
 extern "C" {

@@ -150,6 +150,61 @@ Module "osif1"     (component osif)
    - osif1_OSIF_GetMilliseconds -Returns the number of miliseconds elapsed since starting the internal timer or starting the 
                 scheduler.
 
+Module "adConv1"   (component adc)
+   - adConv1_ADC_DRV_InitConverterStruct -Initializes the converter configuration structure.
+   - adConv1_ADC_DRV_ConfigConverter -Configures the converter with the given configuration structure.
+   - adConv1_ADC_DRV_GetConverterConfig -Gets the current converter configuration.
+   - adConv1_ADC_DRV_Reset -Resets the converter (sets all configurations to reset values)
+   - adConv1_ADC_DRV_InitHwCompareStruct -Initializes the Hardware Compare configuration structure.
+   - adConv1_ADC_DRV_ConfigHwCompare -Configures the Hardware Compare feature with the given configuration structure.
+   - adConv1_ADC_DRV_GetHwCompareConfig -Gets the current Hardware Compare configuration.
+   - adConv1_ADC_DRV_InitHwAverageStruct -Initializes the Hardware Average configuration structure.
+   - adConv1_ADC_DRV_ConfigHwAverage -Configures the Hardware Average feature with the given configuration structure.
+   - adConv1_ADC_DRV_GetHwAverageConfig -Gets the current Hardware Average configuration.
+   - adConv1_ADC_DRV_InitChanStruct -Initializes the control channel configuration structure
+   - adConv1_ADC_DRV_ConfigChan -Configures the selected control channel with the given configuration structure
+   - adConv1_ADC_DRV_GetChanConfig -Gets the current control channel configuration for the selected channel index
+   - adConv1_ADC_DRV_SetSwPretrigger -This function sets the software pretrigger - affects only first 4 control channels.
+   - adConv1_ADC_DRV_WaitConvDone -Waits for a conversion/calibration to finish.
+   - adConv1_ADC_DRV_GetConvCompleteFlag -Gets the control channel Conversion Complete Flag state
+   - adConv1_ADC_DRV_GetChanResult -Gets the last result for the selected control channel
+   - adConv1_ADC_DRV_AutoCalibration -Executes an Auto-Calibration.
+   - adConv1_ADC_DRV_InitUserCalibrationStruct -Initializes the User Calibration configuration structure.
+   - adConv1_ADC_DRV_ConfigUserCalibration -Configures the User Calibration feature with the given configuration structure.
+   - adConv1_ADC_DRV_GetUserCalibration -Gets the current User Calibration configuration.
+   - adConv1_ADC_DRV_GetInterruptNumber -Returns the interrupt number for the ADC instance.
+   - adConv1_ADC_DRV_ClearLatchedTriggers -Clear latched triggers under processing.
+   - adConv1_ADC_DRV_ClearTriggerErrors -Clear all latch trigger error.
+   - adConv1_ADC_DRV_GetTriggerErrorFlags -This function returns the trigger error flags bits of the ADC instance.
+
+Module "flexTimer_mc1" (component ftm_mc)
+   - flexTimer_mc1_FTM_DRV_Init -Initializes the FTM driver.
+   - flexTimer_mc1_FTM_DRV_Deinit -Shuts down the FTM driver.
+   - flexTimer_mc1_FTM_DRV_GetDefaultConfig -Get the default configuration value.
+   - flexTimer_mc1_FTM_DRV_InitCounter -Initialize the FTM counter.
+   - flexTimer_mc1_FTM_DRV_CounterStart -Starts the FTM counter.
+   - flexTimer_mc1_FTM_DRV_CounterStop -Stops the FTM counter.
+   - flexTimer_mc1_FTM_DRV_CounterRead -Reads back the current value of the FTM counter.
+   - flexTimer_mc1_FTM_MC_DRV_GetDefaultConfig -Get the default configuration value.
+   - flexTimer_mc1_FTM_DRV_MaskOutputChannels -This function will mask the output of the channels and at match events will be 
+                ignored by the masked channels.
+   - flexTimer_mc1_FTM_DRV_SetInitialCounterValue -This function configure the initial counter value. The counter will get this 
+                value after an overflow event.
+   - flexTimer_mc1_FTM_DRV_SetHalfCycleReloadPoint -This function configure the value of the counter which will generates an 
+                reload point.
+   - flexTimer_mc1_FTM_DRV_SetSoftOutChnValue -This function will force the output value of a channel to a specific value. 
+                Before using this function it's mandatory to mask the match events using FTM_DRV_MaskOutputChannels and to 
+                enable software output control using FTM_DRV_SetSoftwareOutputChannelControl.
+   - flexTimer_mc1_FTM_DRV_SetSoftwareOutputChannelControl -This function will configure which output channel can be software 
+                controlled.
+   - flexTimer_mc1_FTM_DRV_SetInvertingControl -This function will configure if the second channel of a pair will be inverted 
+                or not.
+   - flexTimer_mc1_FTM_DRV_SetModuloCounterValue -This function configure the maximum counter value.
+   - flexTimer_mc1_FTM_DRV_SetSync -This function configures sync mechanism for some FTM registers ( MOD, CNINT, HCR, CnV, 
+                OUTMASK, INVCTRL, SWOCTRL).
+   - flexTimer_mc1_FTM_DRV_GetFrequency -Retrieves the frequency of the clock source feeding the FTM counter.
+   - flexTimer_mc1_FTM_DRV_ConvertFreqToPeriodTicks -This function is used to covert the given frequency to period in ticks.
+
 Module "Cpu"       (component S32K144_100)
    - Cpu_SystemInit -This function disables the watchdog, enables FPU and the power mode protection. SystemInit is called from 
                 startup_device file.

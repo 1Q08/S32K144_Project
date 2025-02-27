@@ -75,7 +75,7 @@
     <Enabled v="Y" />
     <Properties>
       <Component_name v="lpuart1" />
-      <Device v="LPUART0" />
+      <Device v="LPUART1" />
       <Component_version v="S32K144_SDK01" />
     </Properties>
     <Methods>
@@ -104,6 +104,34 @@
     <Properties>
       <Component_name v="osif1" />
       <Component_version v="osifcommon" />
+    </Properties>
+    <Methods>
+      <EmptySection_DummyValue />
+    </Methods>
+    <Events>
+      <EmptySection_DummyValue />
+    </Events>
+  </Bean>
+  <Bean name="adConv1" type="adc">
+    <Enabled v="Y" />
+    <Properties>
+      <Component_name v="adConv1" />
+      <Device v="ADC0" />
+      <Component_version v="S32K144_SDK01" />
+    </Properties>
+    <Methods>
+      <EmptySection_DummyValue />
+    </Methods>
+    <Events>
+      <EmptySection_DummyValue />
+    </Events>
+  </Bean>
+  <Bean name="flexTimer_mc1" type="ftm_mc">
+    <Enabled v="Y" />
+    <Properties>
+      <Component_name v="flexTimer_mc1" />
+      <Device v="FTM1" />
+      <Component_version v="S32K144_SDK01" />
     </Properties>
     <Methods>
       <EmptySection_DummyValue />
