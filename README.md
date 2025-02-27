@@ -50,4 +50,4 @@ dma库
 
 选择的库不支持print输出浮点数。创建工程时选择`NewLib nano`库，`NewLib nano`库更紧凑，但缺少一些功能 - 例如浮点打印。右键工程文件夹->Target Processor->Libraries support，换成不带`nano`的库。
 
-![image-20250220020327331](C:\Users\zy\AppData\Roaming\Typora\typora-user-images\image-20250220020327331.png)
+![Image text](https://github.com/1Q08/S32K144_Project/blob/main/img_readme/image-20250220020327331.png)
