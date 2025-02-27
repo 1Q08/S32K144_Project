@@ -44,10 +44,16 @@ dma库
 
 
 
+------
+
 ## 问题笔记
 
 ### 1. 串口打印不出浮点数
 
 选择的库不支持print输出浮点数。创建工程时选择`NewLib nano`库，`NewLib nano`库更紧凑，但缺少一些功能 - 例如浮点打印。右键工程文件夹->Target Processor->Libraries support，换成不带`nano`的库。
 
-![Image text](https://github.com/1Q08/S32K144_Project/blob/main/img_readme/image-20250220020327331.png)
+![image-20250220020327331.png](https://github.com/1Q08/S32K144_Project/blob/main/img_readme/image-20250220020327331.png?raw=true)
+
+
+
+### 2.
