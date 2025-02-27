@@ -8,14 +8,23 @@ This project serves as the foundational coding initiative for the S32K144 chip
 >
 >   The list of learning tasks:
 >
->   - [x] Basic inputs and outputs of IO ports (lighting on-board LEDs,KEY control LED,)
+>   - [x] Basic inputs and outputs of IO ports
+>     - [x] lighting on-board LED
+>     - [x] KEY control LED
 >   - [x] Blocking delay
->   - [x] Communication protocol(UART,)
->   - [ ] DMA(UART+DMA,)
+>   - [ ] Non-blocking delay
+>     - [ ] Timers
+>   - [ ] Communication protocol
+>     - [x] UART
+>     - [ ] IIC
+>   - [ ] DMA
+>     - [ ] UART+DMA
+>   - [x] ADC
+>   - [ ] 
 
 ------
 
-## Components Library组件库介绍
+## Components Library组件（库）介绍
 
 ### osif
 
@@ -32,3 +41,13 @@ This project serves as the foundational coding initiative for the S32K144 chip
 ### dmaController
 
 dma库
+
+
+
+## 问题笔记
+
+### 1. 串口打印不出浮点数
+
+选择的库不支持print输出浮点数。创建工程时选择`NewLib nano`库，`NewLib nano`库更紧凑，但缺少一些功能 - 例如浮点打印。右键工程文件夹->Target Processor->Libraries support，换成不带`nano`的库。
+
+![image-20250220020327331](C:\Users\zy\AppData\Roaming\Typora\typora-user-images\image-20250220020327331.png)
