@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PEproject>
   <Header>
-    <Name>S32K144_LPUART_driver</Name>
+    <Name>S32K144_LPUART_DMA_driver</Name>
     <SavedBy>zy</SavedBy>
-    <ModificationStamp>2</ModificationStamp>
+    <ModificationStamp>15</ModificationStamp>
     <Date>2025-04-30</Date>
     <IDE>Eclipse IDE</IDE>
     <PEversion>1.12.2.RT7_b1743-0713</PEversion>
@@ -9315,29 +9315,29 @@
         <ItemSymbol>PTC7_LK</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>Unlocked</Value>
-        <PinFuncPropStateId>state_0</PinFuncPropStateId>
+        <Value>&lt;Automatic&gt;</Value>
+        <PinFuncPropStateId>&lt;Automatic&gt;</PinFuncPropStateId>
       </ItemState>
       <ItemState>
         <ItemSymbol>PTC7_PE</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>Enabled</Value>
-        <PinFuncPropStateId>state_1</PinFuncPropStateId>
+        <Value>&lt;Automatic&gt;</Value>
+        <PinFuncPropStateId>&lt;Automatic&gt;</PinFuncPropStateId>
       </ItemState>
       <ItemState>
         <ItemSymbol>PTC7_PS</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>Pull Up</Value>
-        <PinFuncPropStateId>state_1</PinFuncPropStateId>
+        <Value>&lt;Automatic&gt;</Value>
+        <PinFuncPropStateId>&lt;Automatic&gt;</PinFuncPropStateId>
       </ItemState>
       <ItemState>
         <ItemSymbol>PTC7_InitValue</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>High</Value>
-        <PinFuncPropStateId>state_1</PinFuncPropStateId>
+        <Value>&lt;Automatic&gt;</Value>
+        <PinFuncPropStateId>&lt;Automatic&gt;</PinFuncPropStateId>
       </ItemState>
       <ItemState>
         <ItemSymbol>PTC7_DigitalFilter</ItemSymbol>
@@ -9383,29 +9383,29 @@
         <ItemSymbol>PTC6_LK</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>Unlocked</Value>
-        <PinFuncPropStateId>state_0</PinFuncPropStateId>
+        <Value>&lt;Automatic&gt;</Value>
+        <PinFuncPropStateId>&lt;Automatic&gt;</PinFuncPropStateId>
       </ItemState>
       <ItemState>
         <ItemSymbol>PTC6_PE</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>Enabled</Value>
-        <PinFuncPropStateId>state_1</PinFuncPropStateId>
+        <Value>&lt;Automatic&gt;</Value>
+        <PinFuncPropStateId>&lt;Automatic&gt;</PinFuncPropStateId>
       </ItemState>
       <ItemState>
         <ItemSymbol>PTC6_PS</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>Pull Up</Value>
-        <PinFuncPropStateId>state_1</PinFuncPropStateId>
+        <Value>&lt;Automatic&gt;</Value>
+        <PinFuncPropStateId>&lt;Automatic&gt;</PinFuncPropStateId>
       </ItemState>
       <ItemState>
         <ItemSymbol>PTC6_InitValue</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>High</Value>
-        <PinFuncPropStateId>state_1</PinFuncPropStateId>
+        <Value>&lt;Automatic&gt;</Value>
+        <PinFuncPropStateId>&lt;Automatic&gt;</PinFuncPropStateId>
       </ItemState>
       <ItemState>
         <ItemSymbol>PTC6_DigitalFilter</ItemSymbol>
@@ -14958,7 +14958,7 @@
         <ItemSymbol>ProjectComponentsCountChanged</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>2</Value>
+        <Value>0</Value>
       </ItemState>
       <ItemState>
         <ItemSymbol>ModuleName_ADC</ItemSymbol>
@@ -15592,8 +15592,8 @@
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
         <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Index>0</Index>
-        <EnumSymbVal>LPUART_USING_INTERRUPTS</EnumSymbVal>
+        <Index>1</Index>
+        <EnumSymbVal>LPUART_USING_DMA</EnumSymbVal>
       </ItemState>
       <ItemState>
         <ItemSymbol>BaudRate0</ItemSymbol>
@@ -15643,7 +15643,7 @@
       </ItemState>
       <ItemState>
         <ItemSymbol>RxDMAChannel0</ItemSymbol>
-        <ReadOnly>true</ReadOnly>
+        <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
         <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
         <Index>0</Index>
@@ -15651,12 +15651,12 @@
       </ItemState>
       <ItemState>
         <ItemSymbol>TxDMAChannel0</ItemSymbol>
-        <ReadOnly>true</ReadOnly>
+        <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
         <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
         <TypeSpecNameState>DMAchannel_t</TypeSpecNameState>
-        <Index>0</Index>
-        <EnumSymbVal>0U</EnumSymbVal>
+        <Index>1</Index>
+        <EnumSymbVal>1U</EnumSymbVal>
       </ItemState>
       <ItemState>
         <ItemSymbol>LinkItem</ItemSymbol>
@@ -15976,8 +15976,8 @@
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
         <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Index>0</Index>
-        <Value>true</Value>
+        <Index>1</Index>
+        <Value>false</Value>
       </ItemState>
       <ItemState>
         <ItemSymbol>ChnArbitration0</ItemSymbol>
@@ -16009,7 +16009,7 @@
       <ItemState>
         <ItemSymbol>edmaChannelsConfig</ItemSymbol>
         <ReadOnly>false</ReadOnly>
-        <ListItemCount>1</ListItemCount>
+        <ListItemCount>2</ListItemCount>
         <UserReadOnly>false</UserReadOnly>
         <Expanded>true</Expanded>
         <ItemsTypeState>Beans\edma\Items\S32_SDK_DMA_16CH\edma_channelCfg.item</ItemsTypeState>
@@ -16054,27 +16054,94 @@
       </ItemState>
       <ItemState>
         <ItemSymbol>chnRequest0</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
+        <ReadOnly>true</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
         <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
         <TypeSpecNameState>type_edma_channel_request_s32k144</TypeSpecNameState>
-        <Index>0</Index>
-        <EnumSymbVal>EDMA_REQ_DISABLED</EnumSymbVal>
+        <Index>3</Index>
+        <EnumSymbVal>EDMA_REQ_LPUART1_RX</EnumSymbVal>
       </ItemState>
       <ItemState>
         <ItemSymbol>CallbackName0</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
+        <ReadOnly>true</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
         <Value>NULL</Value>
       </ItemState>
       <ItemState>
         <ItemSymbol>CallbackParam0</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
+        <ReadOnly>true</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
         <Value>NULL</Value>
       </ItemState>
       <ItemState>
         <ItemSymbol>PeriodicTrigger0</ItemSymbol>
+        <ReadOnly>false</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Index>1</Index>
+        <Value>false</Value>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>edmaChannelCfg_1</ItemSymbol>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Value>true</Value>
+        <Expanded>true</Expanded>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>ChnStateStruct1</ItemSymbol>
+        <ReadOnly>false</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+        <Value>dmaController1Chn1_State</Value>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>ChnConfigStructName1</ItemSymbol>
+        <ReadOnly>false</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+        <Value>dmaController1Chn1_Config</Value>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>ChnConfigStructType1</ItemSymbol>
+        <Value>edma_channel_config_t</Value>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>chnNumber1</ItemSymbol>
+        <ReadOnly>false</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Index>1</Index>
+        <EnumSymbVal>1U</EnumSymbVal>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>chnPriority1</ItemSymbol>
+        <ReadOnly>false</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Index>0</Index>
+        <EnumSymbVal>EDMA_CHN_DEFAULT_PRIORITY</EnumSymbVal>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>chnRequest1</ItemSymbol>
+        <ReadOnly>true</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <TypeSpecNameState>type_edma_channel_request_s32k144</TypeSpecNameState>
+        <Index>4</Index>
+        <EnumSymbVal>EDMA_REQ_LPUART1_TX</EnumSymbVal>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>CallbackName1</ItemSymbol>
+        <ReadOnly>true</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+        <Value>NULL</Value>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>CallbackParam1</ItemSymbol>
+        <ReadOnly>true</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+        <Value>NULL</Value>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>PeriodicTrigger1</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
         <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>

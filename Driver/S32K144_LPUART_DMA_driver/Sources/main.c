@@ -8,7 +8,7 @@
 **         S32 Design Studio for ARM (Version 2.2)
 **         S32K144_SDK V3.0.0
 **     Contents    :
-**         串口收发测试程序（中断接收）
+**         串口收发测试程序（DMA收发）
 **
 ** ###################################################################*/
 /*!
@@ -41,7 +41,7 @@ volatile int exit_code = 0;
 int main(void)
 {
 	/* Write your local variable definition here */
-
+	char USART1_TX_BUF[200];
 	/*** Processor Expert internal initialization. DON'T REMOVE THIS CODE!!! ***/
 	#ifdef PEX_RTOS_INIT
 		PEX_RTOS_INIT();                   /* Initialization of the selected RTOS. Macro is defined by the RTOS component. */
@@ -52,6 +52,7 @@ int main(void)
 	CLOCK_SYS_Init(g_clockManConfigsArr, CLOCK_MANAGER_CONFIG_CNT,g_clockManCallbacksArr, CLOCK_MANAGER_CALLBACK_CNT);
 	CLOCK_SYS_UpdateConfiguration(0U, CLOCK_MANAGER_POLICY_AGREEMENT);
 	PINS_DRV_Init(NUM_OF_CONFIGURED_PINS, g_pin_mux_InitConfigArr);  // 初始化IO
+	EDMA_DRV_Init(&dmaController1_State, &dmaController1_InitConfig0, edmaChnStateArray, edmaChnConfigArray, EDMA_CONFIGURED_CHANNELS_COUNT);  // 初始化 eDMA
 	LPUART_DRV_Init(INST_LPUART1, &lpuart1_State, &lpuart1_InitConfig0);  // 初始化串口
 	LPUART_DRV_InstallRxCallback(INST_LPUART1, LPUART1_RX_ISR, NULL);  // 安装接收中断回调函数
 	LPUART_DRV_ReceiveData(INST_LPUART1, buffer, 1);  // 开启串口接收,每次接收一个字节,并安装中断
@@ -62,6 +63,7 @@ int main(void)
 			u1_printf("接收到的数据:%s\r\n",rxdata);
 			memset(rxdata,0,sizeof(rxdata));  // 清零缓冲区
 			triger =0;
+			EDMA_DRV_Deinit();  // 验证是否开启DMA
 		}
 		OSIF_TimeDelay(2);  // 必须添加
 	}
