@@ -2,8 +2,9 @@
   <ToolchainSettings>
     <option>
       <name>PE_G_4PEx_ToolChain_C_Compiler_Includes</name>
-      <values lines_count="6">
+      <values lines_count="7">
         <Line>"${ProjDirPath}/SDK/platform/drivers/src/clock/S32K1xx"</Line>
+        <Line>"${ProjDirPath}/SDK/rtos/osif/"</Line>
         <Line>"${ProjDirPath}/SDK/platform/devices"</Line>
         <Line>"${ProjDirPath}/SDK/platform/devices/common"</Line>
         <Line>"${ProjDirPath}/SDK/platform/devices/S32K144/include"</Line>
@@ -20,43 +21,45 @@
   </ToolchainSettings>
   <GeneratedFilesList>
     <GeneratedByPE>
-      <File Name="SDK/platform/devices/S32K144/startup/system_S32K144.c" FileDate="2025-04-21, 19:23:57" FileAge="1745234637647" FileType="1048576" CompNumb="1" />
-      <File Name="SDK/platform/drivers/inc/clock.h" FileDate="2025-04-21, 19:23:57" FileAge="1745234637550" FileType="1048576" CompNumb="3" />
-      <File Name="SDK/platform/devices/callbacks.h" FileDate="2025-04-21, 19:23:57" FileAge="1745234637591" FileType="1048576" CompNumb="1" />
-      <File Name="Documentation/S32K144_IO_driver_Settings.xml" FileDate="2025-04-21, 19:23:57" FileAge="1745234637726" FileType="3072" />
-      <File Name="SDK/platform/drivers/src/clock/S32K1xx/pcc_hw_access.h" FileDate="2025-04-21, 19:23:57" FileAge="1745234637509" FileType="1048576" CompNumb="3" />
-      <File Name="SDK/platform/drivers/inc/pins_driver.h" FileDate="2025-04-21, 19:23:57" FileAge="1745234637426" FileType="1048576" CompNumb="2" />
-      <File Name="Generated_Code/pin_mux.h" FileDate="2025-04-24, 00:55:33" FileAge="1745427333261" FileType="45637" CompNumb="2" />
-      <File Name="Generated_Code/clockMan1.h" FileDate="2025-04-21, 19:23:57" FileAge="1745234637698" FileType="45637" CompNumb="3" />
-      <File Name="SDK/platform/devices/S32K144/include/S32K144.h" FileDate="2025-04-21, 19:23:57" FileAge="1745234637672" FileType="1048576" CompNumb="1" />
-      <File Name="Generated_Code/pin_mux.c" FileDate="2025-04-24, 00:55:33" FileAge="1745427333267" FileType="45637" CompNumb="2" />
-      <File Name="Generated_Code/clockMan1.c" FileDate="2025-04-21, 19:23:57" FileAge="1745234637692" FileType="45637" CompNumb="3" />
-      <File Name="SDK/platform/drivers/src/clock/S32K1xx/smc_hw_access.h" FileDate="2025-04-21, 19:23:57" FileAge="1745234637543" FileType="1048576" CompNumb="3" />
-      <File Name="SDK/platform/drivers/src/clock/S32K1xx/clock_S32K1xx.h" FileDate="2025-04-21, 19:23:57" FileAge="1745234637501" FileType="1048576" CompNumb="3" />
-      <File Name="SDK/platform/drivers/src/interrupt/interrupt_manager.c" FileDate="2025-04-21, 19:23:57" FileAge="1745234637466" FileType="1048576" CompNumb="4" />
-      <File Name="SDK/platform/devices/devassert.h" FileDate="2025-04-21, 19:23:57" FileAge="1745234637572" FileType="1048576" CompNumb="1" />
-      <File Name="SDK/platform/drivers/src/clock/S32K1xx/clock_S32K1xx.c" FileDate="2025-04-21, 19:23:57" FileAge="1745234637493" FileType="1048576" CompNumb="3" />
-      <File Name="SDK/platform/drivers/src/clock/S32K1xx/sim_hw_access.h" FileDate="2025-04-21, 19:23:57" FileAge="1745234637535" FileType="1048576" CompNumb="3" />
-      <File Name="SDK/platform/drivers/src/clock/S32K1xx/pmc_hw_access.h" FileDate="2025-04-21, 19:23:57" FileAge="1745234637518" FileType="1048576" CompNumb="3" />
-      <File Name="Generated_Code/Cpu.h" FileDate="2025-04-21, 19:23:57" FileAge="1745234637685" FileType="45637" CompNumb="1" />
-      <File Name="SDK/platform/devices/startup.h" FileDate="2025-04-21, 19:23:57" FileAge="1745234637612" FileType="1048576" CompNumb="1" />
-      <File Name="Generated_Code/Cpu.c" FileDate="2025-04-21, 19:23:57" FileAge="1745234637680" FileType="45637" CompNumb="1" />
-      <File Name="SDK/platform/devices/device_registers.h" FileDate="2025-04-21, 19:23:57" FileAge="1745234637584" FileType="1048576" CompNumb="1" />
-      <File Name="Sources/main.c" FileDate="2025-04-24, 00:56:47" FileAge="1745427407120" FileType="128" />
-      <File Name="SDK/platform/devices/startup.c" FileDate="2025-04-21, 19:23:57" FileAge="1745234637617" FileType="1048576" CompNumb="1" />
-      <File Name="SDK/platform/devices/status.h" FileDate="2025-04-21, 19:23:57" FileAge="1745234637578" FileType="1048576" CompNumb="1" />
-      <File Name="SDK/platform/devices/common/s32_core_cm4.h" FileDate="2025-04-21, 19:23:57" FileAge="1745234637606" FileType="1048576" CompNumb="1" />
-      <File Name="Documentation/S32K144_IO_driver.txt" FileDate="2025-04-21, 19:23:57" FileAge="1745234637733" FileType="3072" />
-      <File Name="SDK/platform/devices/S32K144/include/S32K144_features.h" FileDate="2025-04-21, 19:23:57" FileAge="1745234637661" FileType="1048576" CompNumb="1" />
-      <File Name="SDK/platform/drivers/src/pins/pins_driver.c" FileDate="2025-04-21, 19:23:57" FileAge="1745234637402" FileType="1048576" CompNumb="2" />
-      <File Name="SDK/platform/drivers/src/pins/pins_gpio_hw_access.h" FileDate="2025-04-21, 19:23:57" FileAge="1745234637412" FileType="1048576" CompNumb="2" />
-      <File Name="SDK/platform/drivers/src/clock/S32K1xx/scg_hw_access.h" FileDate="2025-04-21, 19:23:57" FileAge="1745234637527" FileType="1048576" CompNumb="3" />
-      <File Name="SDK/platform/drivers/src/pins/pins_port_hw_access.h" FileDate="2025-04-21, 19:23:57" FileAge="1745234637443" FileType="1048576" CompNumb="2" />
-      <File Name="SDK/platform/drivers/src/pins/pins_port_hw_access.c" FileDate="2025-04-21, 19:23:57" FileAge="1745234637434" FileType="1048576" CompNumb="2" />
-      <File Name="SDK/platform/drivers/inc/clock_manager.h" FileDate="2025-04-21, 19:23:57" FileAge="1745234637561" FileType="1048576" CompNumb="3" />
-      <File Name="SDK/platform/drivers/inc/interrupt_manager.h" FileDate="2025-04-21, 19:23:57" FileAge="1745234637474" FileType="1048576" CompNumb="4" />
-      <File Name="SDK/platform/devices/S32K144/startup/system_S32K144.h" FileDate="2025-04-21, 19:23:57" FileAge="1745234637641" FileType="1048576" CompNumb="1" />
+      <File Name="SDK/rtos/osif/osif.h" FileDate="2025-04-30, 18:17:17" FileAge="1746008237079" FileType="1048576" />
+      <File Name="SDK/platform/devices/S32K144/startup/system_S32K144.c" FileDate="2025-04-30, 17:35:25" FileAge="1746005725176" FileType="1048576" CompNumb="1" />
+      <File Name="SDK/platform/drivers/inc/clock.h" FileDate="2025-04-30, 17:35:25" FileAge="1746005725088" FileType="1048576" CompNumb="3" />
+      <File Name="SDK/platform/devices/callbacks.h" FileDate="2025-04-30, 17:35:25" FileAge="1746005725121" FileType="1048576" CompNumb="1" />
+      <File Name="Documentation/S32K144_IO_driver_Settings.xml" FileDate="2025-04-30, 18:19:01" FileAge="1746008341400" FileType="3072" />
+      <File Name="SDK/platform/drivers/src/clock/S32K1xx/pcc_hw_access.h" FileDate="2025-04-30, 17:35:25" FileAge="1746005725053" FileType="1048576" CompNumb="3" />
+      <File Name="Generated_Code/pin_mux.h" FileDate="2025-04-30, 18:04:19" FileAge="1746007459426" FileType="45637" CompNumb="2" />
+      <File Name="SDK/platform/drivers/inc/pins_driver.h" FileDate="2025-04-30, 17:35:24" FileAge="1746005724987" FileType="1048576" CompNumb="2" />
+      <File Name="Generated_Code/clockMan1.h" FileDate="2025-04-30, 17:06:32" FileAge="1746003992906" FileType="45637" CompNumb="3" />
+      <File Name="SDK/platform/devices/S32K144/include/S32K144.h" FileDate="2025-04-30, 17:35:25" FileAge="1746005725197" FileType="1048576" CompNumb="1" />
+      <File Name="Generated_Code/pin_mux.c" FileDate="2025-04-30, 18:04:19" FileAge="1746007459433" FileType="45637" CompNumb="2" />
+      <File Name="Generated_Code/clockMan1.c" FileDate="2025-04-30, 17:06:32" FileAge="1746003992905" FileType="45637" CompNumb="3" />
+      <File Name="SDK/platform/drivers/src/clock/S32K1xx/smc_hw_access.h" FileDate="2025-04-30, 17:35:25" FileAge="1746005725082" FileType="1048576" CompNumb="3" />
+      <File Name="SDK/platform/drivers/src/clock/S32K1xx/clock_S32K1xx.h" FileDate="2025-04-30, 17:35:25" FileAge="1746005725046" FileType="1048576" CompNumb="3" />
+      <File Name="SDK/platform/drivers/src/interrupt/interrupt_manager.c" FileDate="2025-04-30, 17:35:25" FileAge="1746005725016" FileType="1048576" CompNumb="4" />
+      <File Name="SDK/platform/devices/devassert.h" FileDate="2025-04-30, 17:35:25" FileAge="1746005725106" FileType="1048576" CompNumb="1" />
+      <File Name="SDK/platform/drivers/src/clock/S32K1xx/clock_S32K1xx.c" FileDate="2025-04-30, 17:35:25" FileAge="1746005725039" FileType="1048576" CompNumb="3" />
+      <File Name="SDK/platform/drivers/src/clock/S32K1xx/sim_hw_access.h" FileDate="2025-04-30, 17:35:25" FileAge="1746005725075" FileType="1048576" CompNumb="3" />
+      <File Name="SDK/platform/drivers/src/clock/S32K1xx/pmc_hw_access.h" FileDate="2025-04-30, 17:35:25" FileAge="1746005725061" FileType="1048576" CompNumb="3" />
+      <File Name="Generated_Code/Cpu.h" FileDate="2025-04-30, 18:17:17" FileAge="1746008237114" FileType="45637" CompNumb="1" />
+      <File Name="SDK/platform/devices/startup.h" FileDate="2025-04-30, 17:35:25" FileAge="1746005725135" FileType="1048576" CompNumb="1" />
+      <File Name="Generated_Code/Cpu.c" FileDate="2025-04-30, 17:06:32" FileAge="1746003992904" FileType="45637" CompNumb="1" />
+      <File Name="SDK/rtos/osif/osif_baremetal.c" FileDate="2025-04-30, 18:17:17" FileAge="1746008237082" FileType="1048576" />
+      <File Name="SDK/platform/devices/device_registers.h" FileDate="2025-04-30, 17:35:25" FileAge="1746005725116" FileType="1048576" CompNumb="1" />
+      <File Name="Sources/main.c" FileDate="2025-04-30, 18:15:47" FileAge="1746008147534" FileType="128" />
+      <File Name="SDK/platform/devices/startup.c" FileDate="2025-04-30, 17:35:25" FileAge="1746005725155" FileType="1048576" CompNumb="1" />
+      <File Name="SDK/platform/devices/status.h" FileDate="2025-04-30, 17:35:25" FileAge="1746005725111" FileType="1048576" CompNumb="1" />
+      <File Name="SDK/platform/devices/common/s32_core_cm4.h" FileDate="2025-04-30, 17:35:25" FileAge="1746005725130" FileType="1048576" CompNumb="1" />
+      <File Name="Documentation/S32K144_IO_driver.txt" FileDate="2025-04-30, 18:17:17" FileAge="1746008237149" FileType="3072" />
+      <File Name="SDK/platform/devices/S32K144/include/S32K144_features.h" FileDate="2025-04-30, 17:35:25" FileAge="1746005725188" FileType="1048576" CompNumb="1" />
+      <File Name="SDK/platform/drivers/src/pins/pins_driver.c" FileDate="2025-04-30, 17:35:24" FileAge="1746005724966" FileType="1048576" CompNumb="2" />
+      <File Name="SDK/platform/drivers/src/pins/pins_gpio_hw_access.h" FileDate="2025-04-30, 17:35:24" FileAge="1746005724974" FileType="1048576" CompNumb="2" />
+      <File Name="SDK/platform/drivers/src/clock/S32K1xx/scg_hw_access.h" FileDate="2025-04-30, 17:35:25" FileAge="1746005725068" FileType="1048576" CompNumb="3" />
+      <File Name="SDK/platform/drivers/src/pins/pins_port_hw_access.h" FileDate="2025-04-30, 17:35:25" FileAge="1746005725003" FileType="1048576" CompNumb="2" />
+      <File Name="SDK/platform/drivers/src/pins/pins_port_hw_access.c" FileDate="2025-04-30, 17:35:24" FileAge="1746005724993" FileType="1048576" CompNumb="2" />
+      <File Name="SDK/platform/drivers/inc/clock_manager.h" FileDate="2025-04-30, 17:35:25" FileAge="1746005725095" FileType="1048576" CompNumb="3" />
+      <File Name="SDK/platform/drivers/inc/interrupt_manager.h" FileDate="2025-04-30, 17:35:25" FileAge="1746005725022" FileType="1048576" CompNumb="4" />
+      <File Name="SDK/platform/devices/S32K144/startup/system_S32K144.h" FileDate="2025-04-30, 17:35:25" FileAge="1746005725170" FileType="1048576" CompNumb="1" />
     </GeneratedByPE>
   </GeneratedFilesList>
-  <CodeGenReference>7</CodeGenReference>
+  <CodeGenReference>2</CodeGenReference>
 </CodeGenerationInfo>

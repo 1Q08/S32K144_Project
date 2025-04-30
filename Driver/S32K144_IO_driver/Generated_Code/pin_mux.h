@@ -7,7 +7,7 @@
 **     Version     : Component 1.2.0, Driver 1.4, CPU db: 3.00.000
 **     Repository  : SDK_S32K1xx_15
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2025-04-24, 00:55, # CodeGen: 5
+**     Date/Time   : 2025-04-30, 18:04, # CodeGen: 4
 **     Abstract    :
 **
 **     Settings    :
@@ -310,10 +310,10 @@
 **                  Direction                              : <Automatic>
 **                  Pin 11                                 : <Automatic>
 **                  Direction                              : <Automatic>
-**                  Pin 12                                 : <Automatic>
-**                  Direction                              : <Automatic>
-**                  Pin 13                                 : <Automatic>
-**                  Direction                              : <Automatic>
+**                  Pin 12                                 : PTC12
+**                  Direction                              : Input
+**                  Pin 13                                 : PTC13
+**                  Direction                              : Input
 **                  Pin 14                                 : <Automatic>
 **                  Direction                              : <Automatic>
 **                  Pin 15                                 : <Automatic>
@@ -1021,20 +1021,20 @@
 **                Interrupt Status Field                   : <Automatic>
 **                Interrupt Configuration Field            : <Automatic>
 **                Pin Mux Field                            : <Automatic>
-**                Lock Field                               : <Automatic>
-**                Pull Enable Field                        : <Automatic>
-**                Pull Select Field                        : <Automatic>
-**                Initial Value Field                      : <Automatic>
+**                Lock Field                               : Unlocked
+**                Pull Enable Field                        : Enabled
+**                Pull Select Field                        : Pull Down
+**                Initial Value Field                      : Low
 **                Digital Filter Field                     : <Automatic>
 **              Pin 50: PTC12                              : 
 **                Custom name, Signal name                 : PTC12
 **                Interrupt Status Field                   : <Automatic>
 **                Interrupt Configuration Field            : <Automatic>
 **                Pin Mux Field                            : <Automatic>
-**                Lock Field                               : <Automatic>
-**                Pull Enable Field                        : <Automatic>
-**                Pull Select Field                        : <Automatic>
-**                Initial Value Field                      : <Automatic>
+**                Lock Field                               : Unlocked
+**                Pull Enable Field                        : Enabled
+**                Pull Select Field                        : Pull Down
+**                Initial Value Field                      : Low
 **                Digital Filter Field                     : <Automatic>
 **              Pin 51: PTC11                              : 
 **                Custom name, Signal name                 : PTC11
@@ -1583,7 +1583,7 @@
 
 
 /*! @brief User number of configured pins */
-#define NUM_OF_CONFIGURED_PINS 4
+#define NUM_OF_CONFIGURED_PINS 6
 
 /*! @brief User configuration structure */
 extern pin_settings_config_t g_pin_mux_InitConfigArr[NUM_OF_CONFIGURED_PINS];

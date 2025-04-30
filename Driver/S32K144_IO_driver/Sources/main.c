@@ -5,10 +5,12 @@
 **         Main module.
 **         This module contains user's application code.
 **     Settings    :
-**         Build by S32 Design Studio for ARM (Version 2.2)
+**         S32 Design Studio for ARM (Version 2.2)
 **         S32K144_SDK V3.0.0
 **     Contents    :
-**         Basic inputs and outputs of IO ports¡ª¡ªOperation of on-board LEDs
+**         GPIOµÄ»ù±¾ÊäÈëÊä³ö£º
+**         °åÔØLEDÁÁÃð²Ù×÷
+**         ÂÖÑ¯Ä£Ê½¶ÁÈ¡°´¼üÊÇ·ñ°´ÏÂ
 **
 ** ###################################################################*/
 /*!
@@ -30,7 +32,9 @@
 volatile int exit_code = 0;
 
 /* User includes (#include below this line is not maintained by Processor Expert) */
+#include "osif.h"
 #include "led.h"
+#include "key.h"
 /*! 
   \brief The main function for the project.
   \details The startup initialization sequence is the following:
@@ -53,9 +57,45 @@ int main(void)
 	PINS_DRV_Init(NUM_OF_CONFIGURED_PINS, g_pin_mux_InitConfigArr);  // ³õÊ¼»¯IO
 	while(1)
 	{
-		PINS_DRV_WritePins(PTD, 1<<0 | 0<<1 | 1<<15  | 0<<16 );
+		if(KEY1 == 1)
+		{
+			LED_G(1);  // ÂÌµÆ
+			LED_R(0);  // ºìµÆ
+			LED_Y(1);  // »ÆµÆ
+			LED_B(0);  // À¶µÆ
+		}
+		else if(KEY2 == 1)
+		{
+			LED_G(0);  // ÂÌµÆ
+			LED_R(1);  // ºìµÆ
+			LED_Y(0);  // »ÆµÆ
+			LED_B(1);  // À¶µÆ
+		}
+		else
+		{
+			LED_G(0);  // ÂÌµÆ
+			LED_R(1);  // ºìµÆ
+			LED_Y(1);  // »ÆµÆ
+			LED_B(1);  // À¶µÆ
+			OSIF_TimeDelay(100);
+			LED_G(1);  // ÂÌµÆ
+			LED_R(0);  // ºìµÆ
+			LED_Y(1);  // »ÆµÆ
+			LED_B(1);  // À¶µÆ
+			OSIF_TimeDelay(100);
+			LED_G(1);  // ÂÌµÆ
+			LED_R(1);  // ºìµÆ
+			LED_Y(0);  // »ÆµÆ
+			LED_B(1);  // À¶µÆ
+			OSIF_TimeDelay(100);
+			LED_G(1);  // ÂÌµÆ
+			LED_R(1);  // ºìµÆ
+			LED_Y(1);  // »ÆµÆ
+			LED_B(0);  // À¶µÆ
+			OSIF_TimeDelay(100);
+		}
 	}
-	/*** Don't write any code pass this line, or it will be deleted during code generation. ***/
+  /*** Don't write any code pass this line, or it will be deleted during code generation. ***/
   /*** RTOS startup code. Macro PEX_RTOS_START is defined by the RTOS component. DON'T MODIFY THIS CODE!!! ***/
   #ifdef PEX_RTOS_START
     PEX_RTOS_START();                  /* Startup of the selected RTOS. Macro is defined by the RTOS component. */

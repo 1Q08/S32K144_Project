@@ -3,7 +3,7 @@
   <Header>
     <Name>S32K144_IO_driver</Name>
     <SavedBy>zy</SavedBy>
-    <ModificationStamp>6</ModificationStamp>
+    <ModificationStamp>9</ModificationStamp>
     <Date>2025-04-21</Date>
     <IDE>Eclipse IDE</IDE>
     <PEversion>1.12.2.RT7_b1743-0713</PEversion>
@@ -29,7 +29,7 @@
     <UseExistingModules>true</UseExistingModules>
     <RenamePeripheries>false</RenamePeripheries>
     <Autodependency>true</Autodependency>
-    <ProjectCompNumb>5</ProjectCompNumb>
+    <ProjectCompNumb>7</ProjectCompNumb>
     <DelUnusedPreviouslyGenFiles>true</DelUnusedPreviouslyGenFiles>
     <GeneratedCodeFrozen>false</GeneratedCodeFrozen>
     <AssignInitComponentNameToPrph>true</AssignInitComponentNameToPrph>
@@ -2550,27 +2550,27 @@
         <ItemSymbol>PTC_port_12</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>&lt;Automatic&gt;</Value>
+        <Value>PTC12</Value>
         <SharedPrphMode>false</SharedPrphMode>
       </ItemState>
       <ItemState>
         <ItemSymbol>PTC_port_12_Dir</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>&lt;Automatic&gt;</Value>
+        <Value>Input</Value>
       </ItemState>
       <ItemState>
         <ItemSymbol>PTC_port_13</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>&lt;Automatic&gt;</Value>
+        <Value>PTC13</Value>
         <SharedPrphMode>false</SharedPrphMode>
       </ItemState>
       <ItemState>
         <ItemSymbol>PTC_port_13_Dir</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>&lt;Automatic&gt;</Value>
+        <Value>Input</Value>
       </ItemState>
       <ItemState>
         <ItemSymbol>PTC_port_14</ItemSymbol>
@@ -7263,29 +7263,29 @@
         <ItemSymbol>PTC13_LK</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>&lt;Automatic&gt;</Value>
-        <PinFuncPropStateId>&lt;Automatic&gt;</PinFuncPropStateId>
+        <Value>Unlocked</Value>
+        <PinFuncPropStateId>state_0</PinFuncPropStateId>
       </ItemState>
       <ItemState>
         <ItemSymbol>PTC13_PE</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>&lt;Automatic&gt;</Value>
-        <PinFuncPropStateId>&lt;Automatic&gt;</PinFuncPropStateId>
+        <Value>Enabled</Value>
+        <PinFuncPropStateId>state_1</PinFuncPropStateId>
       </ItemState>
       <ItemState>
         <ItemSymbol>PTC13_PS</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>&lt;Automatic&gt;</Value>
-        <PinFuncPropStateId>&lt;Automatic&gt;</PinFuncPropStateId>
+        <Value>Pull Down</Value>
+        <PinFuncPropStateId>state_0</PinFuncPropStateId>
       </ItemState>
       <ItemState>
         <ItemSymbol>PTC13_InitValue</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>&lt;Automatic&gt;</Value>
-        <PinFuncPropStateId>&lt;Automatic&gt;</PinFuncPropStateId>
+        <Value>Low</Value>
+        <PinFuncPropStateId>state_0</PinFuncPropStateId>
       </ItemState>
       <ItemState>
         <ItemSymbol>PTC13_DigitalFilter</ItemSymbol>
@@ -7331,29 +7331,29 @@
         <ItemSymbol>PTC12_LK</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>&lt;Automatic&gt;</Value>
-        <PinFuncPropStateId>&lt;Automatic&gt;</PinFuncPropStateId>
+        <Value>Unlocked</Value>
+        <PinFuncPropStateId>state_0</PinFuncPropStateId>
       </ItemState>
       <ItemState>
         <ItemSymbol>PTC12_PE</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>&lt;Automatic&gt;</Value>
-        <PinFuncPropStateId>&lt;Automatic&gt;</PinFuncPropStateId>
+        <Value>Enabled</Value>
+        <PinFuncPropStateId>state_1</PinFuncPropStateId>
       </ItemState>
       <ItemState>
         <ItemSymbol>PTC12_PS</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>&lt;Automatic&gt;</Value>
-        <PinFuncPropStateId>&lt;Automatic&gt;</PinFuncPropStateId>
+        <Value>Pull Down</Value>
+        <PinFuncPropStateId>state_0</PinFuncPropStateId>
       </ItemState>
       <ItemState>
         <ItemSymbol>PTC12_InitValue</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>&lt;Automatic&gt;</Value>
-        <PinFuncPropStateId>&lt;Automatic&gt;</PinFuncPropStateId>
+        <Value>Low</Value>
+        <PinFuncPropStateId>state_0</PinFuncPropStateId>
       </ItemState>
       <ItemState>
         <ItemSymbol>PTC12_DigitalFilter</ItemSymbol>
@@ -14939,7 +14939,7 @@
         <ItemSymbol>ProjectComponentsCount</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>3</Value>
+        <Value>4</Value>
       </ItemState>
       <ItemState>
         <ItemSymbol>PeripheralMaxIdValue</ItemSymbol>
@@ -14951,7 +14951,7 @@
         <ItemSymbol>ProjectComponentsCountChanged</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>2</Value>
+        <Value>1</Value>
       </ItemState>
       <ItemState>
         <ItemSymbol>ModuleName_ADC</ItemSymbol>
@@ -15488,6 +15488,182 @@
         <Value>intMan1_DefaultEvent</Value>
       </ItemState>
     </Events>
+  </Bean>
+  <Bean>
+    <Repository>file:/${ProcessorExpert_loc}/../../S32DS/software/S32SDK_S32K1xx_RTM_3.0.0/tools/pex/Repositories/SDK_S32K1xx_15_Repository</Repository>
+    <ComponentUUID>com.freescale.processorexpert.ksdk.osif</ComponentUUID>
+    <BeanType>osif</BeanType>
+    <Name>osif1</Name>
+    <CompNumb>5</CompNumb>
+    <CompEnabled>true</CompEnabled>
+    <GenCodeMode>ALWAYS_WRITE</GenCodeMode>
+    <IconName>OS_LDD</IconName>
+    <UserFolderName />
+    <Comment lines_count="0" />
+    <Template />
+    <BeanVersion>SDK_S32K1xx_15</BeanVersion>
+    <LightErrorsIgnored>false</LightErrorsIgnored>
+    <Properties>
+      <ItemState>
+        <ItemSymbol>DeviceName</ItemSymbol>
+        <Value>osif1</Value>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>CompVersion</ItemSymbol>
+        <Value>osifcommon</Value>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>VersionSpecificItem</ItemSymbol>
+        <ListItemCount>1</ListItemCount>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>Settings</ItemSymbol>
+        <ReadOnly>false</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>PropertiesItem</ItemSymbol>
+        <ListItemCount>1</ListItemCount>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>MainConfigurationsGrp</ItemSymbol>
+        <ReadOnly>false</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+        <Expanded>true</Expanded>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>OSIFVARIANT</ItemSymbol>
+        <ReadOnly>false</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Index>0</Index>
+        <EnumSymbVal>USING_OS_Baremetal</EnumSymbVal>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>LinkItem</ItemSymbol>
+        <ListItemCount>1</ListItemCount>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>LinkGrp</ItemSymbol>
+        <ReadOnly>false</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+        <Expanded>true</Expanded>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>Link0</ItemSymbol>
+        <ReadOnly>false</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+        <Value>clockMan1</Value>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>Link1</ItemSymbol>
+        <ReadOnly>false</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+        <Value>intMan1</Value>
+      </ItemState>
+    </Properties>
+    <Methods>
+      <ItemState>
+        <ItemSymbol>SdkSpecificMethods</ItemSymbol>
+        <ListItemCount>1</ListItemCount>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>osifgroup</ItemSymbol>
+        <ReadOnly>false</ReadOnly>
+        <UserReadOnly>false</UserReadOnly>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>OSIF_TimeDelay</ItemSymbol>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Index>0</Index>
+        <Value>true</Value>
+        <LastSelection>true</LastSelection>
+        <LastUserSel>always</LastUserSel>
+        <UsrMethodName>OSIF_TimeDelay</UsrMethodName>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>OSIF_MutexLock</ItemSymbol>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Index>0</Index>
+        <Value>true</Value>
+        <LastSelection>true</LastSelection>
+        <LastUserSel>always</LastUserSel>
+        <UsrMethodName>OSIF_MutexLock</UsrMethodName>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>OSIF_MutexUnlock</ItemSymbol>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Index>0</Index>
+        <Value>true</Value>
+        <LastSelection>true</LastSelection>
+        <LastUserSel>always</LastUserSel>
+        <UsrMethodName>OSIF_MutexUnlock</UsrMethodName>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>OSIF_MutexCreate</ItemSymbol>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Index>0</Index>
+        <Value>true</Value>
+        <LastSelection>true</LastSelection>
+        <LastUserSel>always</LastUserSel>
+        <UsrMethodName>OSIF_MutexCreate</UsrMethodName>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>OSIF_MutexDestroy</ItemSymbol>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Index>0</Index>
+        <Value>true</Value>
+        <LastSelection>true</LastSelection>
+        <LastUserSel>always</LastUserSel>
+        <UsrMethodName>OSIF_MutexDestroy</UsrMethodName>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>OSIF_SemaWait</ItemSymbol>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Index>0</Index>
+        <Value>true</Value>
+        <LastSelection>true</LastSelection>
+        <LastUserSel>always</LastUserSel>
+        <UsrMethodName>OSIF_SemaWait</UsrMethodName>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>OSIF_SemaPost</ItemSymbol>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Index>0</Index>
+        <Value>true</Value>
+        <LastSelection>true</LastSelection>
+        <LastUserSel>always</LastUserSel>
+        <UsrMethodName>OSIF_SemaPost</UsrMethodName>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>OSIF_SemaCreate</ItemSymbol>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Index>0</Index>
+        <Value>true</Value>
+        <LastSelection>true</LastSelection>
+        <LastUserSel>always</LastUserSel>
+        <UsrMethodName>OSIF_SemaCreate</UsrMethodName>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>OSIF_SemaDestroy</ItemSymbol>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Index>0</Index>
+        <Value>true</Value>
+        <LastSelection>true</LastSelection>
+        <LastUserSel>always</LastUserSel>
+        <UsrMethodName>OSIF_SemaDestroy</UsrMethodName>
+      </ItemState>
+      <ItemState>
+        <ItemSymbol>OSIF_GetMilliseconds</ItemSymbol>
+        <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
+        <Index>0</Index>
+        <Value>true</Value>
+        <LastSelection>true</LastSelection>
+        <LastUserSel>always</LastUserSel>
+        <UsrMethodName>OSIF_GetMilliseconds</UsrMethodName>
+      </ItemState>
+    </Methods>
+    <Events />
   </Bean>
   <ComponentInitializationSequence>
     <EmptySection_DummyValue />
