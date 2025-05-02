@@ -149,11 +149,13 @@ dma 库
 
 原因：选择的库不支持 print 打印输出浮点数。创建工程时选择 `NewLib nano` 库，`NewLib nano` 库更紧凑，但缺少一些功能 - 例如浮点打印
 
-解决方法：右键工程文件夹 → Target Processor → Libraries support，换成不带 `nano` 的库。
+解决方法一：右键工程文件夹 → Target Processor → Libraries support，换成不带 `nano` 的库。
 
-![image-20250220020327331.png](https://github.com/1Q08/S32K144_Project/blob/main/img_readme/image-20250220020327331.png?raw=true)
+<img src="https://github.com/1Q08/S32K144_Project/blob/main/img_readme/%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95%E4%B8%80.png?raw=true" alt="修复一.png" style="zoom:50%;" />
 
+解决方法二：右键工程文件夹 → Standard S32DS C Linker → Miscellaneous，勾选 `Support print float format for newlib_nano library (-u_printf float)` 选项。
 
+<img src="https://github.com/1Q08/S32K144_Project/blob/main/img_readme/%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95%E4%BA%8C.png?raw=true" alt="修复二.png" style="zoom:50%;" />
 
 ### 项目文件图标右下角有问号、星号等图标是什么意思
 
