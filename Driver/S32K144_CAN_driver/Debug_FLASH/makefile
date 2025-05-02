@@ -9,8 +9,13 @@ RM := rm -rf
 # All of the sources participating in the build are defined here
 -include sources.mk
 -include Sources/subdir.mk
+-include SDK/rtos/osif/subdir.mk
+-include SDK/platform/pal/src/can/subdir.mk
 -include SDK/platform/drivers/src/pins/subdir.mk
+-include SDK/platform/drivers/src/lpuart/subdir.mk
 -include SDK/platform/drivers/src/interrupt/subdir.mk
+-include SDK/platform/drivers/src/flexcan/subdir.mk
+-include SDK/platform/drivers/src/edma/subdir.mk
 -include SDK/platform/drivers/src/clock/S32K1xx/subdir.mk
 -include SDK/platform/devices/S32K144/startup/subdir.mk
 -include SDK/platform/devices/subdir.mk

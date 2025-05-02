@@ -12,6 +12,8 @@
 -I"C:/Users/zy/Desktop/githubspace/S32K144_Project/Driver/S32K144_CAN_driver/SDK/platform/devices/S32K144/include"
 -I"C:/Users/zy/Desktop/githubspace/S32K144_Project/Driver/S32K144_CAN_driver/SDK/platform/devices/S32K144/startup"
 -I"C:/Users/zy/Desktop/githubspace/S32K144_Project/Driver/S32K144_CAN_driver/SDK/platform/drivers/inc"
+-I"C:/Users/zy/Desktop/githubspace/S32K144_Project/Driver/S32K144_CAN_driver/SDK/rtos/osif/"
+-I"C:/Users/zy/Desktop/githubspace/S32K144_Project/Driver/S32K144_CAN_driver/SDK/platform/pal/inc"
 -O1
 -g
 -pedantic

@@ -7,7 +7,7 @@
 **     Version     : Component 1.2.0, Driver 1.4, CPU db: 3.00.000
 **     Repository  : SDK_S32K1xx_15
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2025-05-02, 17:14, # CodeGen: 0
+**     Date/Time   : 2025-05-02, 19:47, # CodeGen: 4
 **     Abstract    :
 **
 **     Settings    :
@@ -58,16 +58,16 @@
 **              Peripheral Type CAN                        : 
 **                Custom name                              : CAN0
 **                CAN0                                     : 
-**                  Receiver Input                         : <Automatic>
-**                  Transmitter Output                     : <Automatic>
+**                  Receiver Input                         : PTE4
+**                  Transmitter Output                     : PTE5
 **                Custom name                              : CAN1
 **                CAN1                                     : 
-**                  Receiver Input                         : <Automatic>
-**                  Transmitter Output                     : <Automatic>
+**                  Receiver Input                         : PTA12
+**                  Transmitter Output                     : PTA13
 **                Custom name                              : CAN2
 **                CAN2                                     : 
-**                  Receiver Input                         : <Automatic>
-**                  Transmitter Output                     : <Automatic>
+**                  Receiver Input                         : PTC16
+**                  Transmitter Output                     : PTC17
 **              Peripheral Type CMP                        : 
 **                Custom name                              : CMP0
 **                CMP0                                     : 
@@ -481,9 +481,9 @@
 **                LPUART1                                  : 
 **                  Clear to Send                          : <Automatic>
 **                  Request to Send                        : <Automatic>
-**                  Receive Data                           : <Automatic>
-**                  Transmit Data                          : <Automatic>
-**                  Direction                              : <Automatic>
+**                  Receive Data                           : PTC6
+**                  Transmit Data                          : PTC7
+**                  Direction                              : Output
 **                Custom name                              : LPUART2
 **                LPUART2                                  : 
 **                  Clear to Send                          : <Automatic>
@@ -1322,20 +1322,20 @@
 **                Interrupt Status Field                   : <Automatic>
 **                Interrupt Configuration Field            : <Automatic>
 **                Pin Mux Field                            : <Automatic>
-**                Lock Field                               : <Automatic>
-**                Pull Enable Field                        : <Automatic>
-**                Pull Select Field                        : <Automatic>
-**                Initial Value Field                      : <Automatic>
+**                Lock Field                               : Unlocked
+**                Pull Enable Field                        : Enabled
+**                Pull Select Field                        : Pull Down
+**                Initial Value Field                      : Low
 **                Digital Filter Field                     : <Automatic>
 **              Pin 81: PTC6                               : 
 **                Custom name, Signal name                 : PTC6
 **                Interrupt Status Field                   : <Automatic>
 **                Interrupt Configuration Field            : <Automatic>
 **                Pin Mux Field                            : <Automatic>
-**                Lock Field                               : <Automatic>
-**                Pull Enable Field                        : <Automatic>
-**                Pull Select Field                        : <Automatic>
-**                Initial Value Field                      : <Automatic>
+**                Lock Field                               : Unlocked
+**                Pull Enable Field                        : Enabled
+**                Pull Select Field                        : Pull Down
+**                Initial Value Field                      : Low
 **                Digital Filter Field                     : <Automatic>
 **              Pin 82: PTA16                              : 
 **                Custom name, Signal name                 : PTA16
@@ -1582,7 +1582,11 @@
 #include "pins_driver.h"
 
 
-/*! @brief No pin was configured different with reset value */
+/*! @brief User number of configured pins */
+#define NUM_OF_CONFIGURED_PINS 8
+
+/*! @brief User configuration structure */
+extern pin_settings_config_t g_pin_mux_InitConfigArr[NUM_OF_CONFIGURED_PINS];
 
 /* END pin_mux. */
 #endif /* #ifndef pin_mux_H */
